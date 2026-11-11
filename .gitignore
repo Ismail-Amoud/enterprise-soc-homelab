@@ -1,0 +1,16 @@
+# Never publish local secrets or raw evidence
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.kdbx
+secrets/
+private/
+raw-logs/
+evidence-unredacted/
+.DS_Store
+Thumbs.db
