@@ -1,0 +1,8 @@
+flowchart TD
+    A[Dedicated lab host - identity withheld] --> B[Proxmox VE]
+    B --> C[Windows Server / Active Directory]
+    B --> D[Windows 11 + Sysmon]
+    B --> E[Linux / Wazuh]
+    C -->|security events| E
+    D -->|security events| E
+    E --> F[Alert triage and investigation]
